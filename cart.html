@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="./cart.css" rel="stylesheet"/><link href="./cart-theme.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+<!-- ROW 1 -->
+<div class="top-bar tob-bar-products-page">
+<button class="nav-toggle" id="navToggle" aria-label="باز کردن منو" aria-expanded="false"><span></span><span></span><span></span></button>
+<div class="logo">
+<h1>ROMA WATCH</h1>
+</div>
+<div class="search-box">
+<i class="bi bi-search"></i>
+<input placeholder="جستجوی ساعت..." type="text"/>
+</div>
+<div class="actions">
+<a class="track-btn" href="./tracking.html" style="text-decoration:none">رهگیری محصولات</a>
+<a class="favorites-header" href="./favorites.html" title="محصولات مورد علاقه"><i class="bi bi-heart"></i><span class="favorites-badge">0</span></a><a href="./cart.html">
+<div class="cart-wrapper">
+<i class="bi bi-cart2"></i>
+<span class="badge">1</span>
+</div>
+</a>
+<div class="login-wrapper">
+<a href="./login.html">
+<i class="bi bi-person-fill"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- ROW 2 -->
+<div class="nav-scrim" id="navScrim"></div>
+      <nav class="nav" id="siteNav">
+<ul class="nav-list">
+<li>
+<a class="nav-item" href="./index.html"><i class="bi bi-house"></i> ساعت روما</a>
+</li>
+<!-- MEGA MENU -->
+<li class="dropdown-parent mega">
+<a class="nav-item" href="#"><i class="bi bi-gem"></i> برندها</a>
+<div class="mega-dropdown"><ul><li><a href="./products.htm?brand=Casio">Casio</a></li><li><a href="./products.htm?brand=Certina">Certina</a></li><li><a href="./products.htm?brand=Citizen">Citizen</a></li><li><a href="./products.htm?brand=Daniel%20Wellington">Daniel Wellington</a></li><li><a href="./products.htm?brand=Emporio%20Armani">Emporio Armani</a></li></ul><ul><li><a href="./products.htm?brand=Fossil">Fossil</a></li><li><a href="./products.htm?brand=Garmin">Garmin</a></li><li><a href="./products.htm?brand=Hamilton">Hamilton</a></li><li><a href="./products.htm?brand=Hugo%20Boss">Hugo Boss</a></li><li><a href="./products.htm?brand=Longines">Longines</a></li></ul><ul><li><a href="./products.htm?brand=Michael%20Kors">Michael Kors</a></li><li><a href="./products.htm?brand=Mido">Mido</a></li><li><a href="./products.htm?brand=Omega">Omega</a></li><li><a href="./products.htm?brand=Orient">Orient</a></li><li><a href="./products.htm?brand=Rado">Rado</a></li></ul><ul><li><a href="./products.htm?brand=Rolex">Rolex</a></li><li><a href="./products.htm?brand=Seiko">Seiko</a></li><li><a href="./products.htm?brand=Swatch">Swatch</a></li><li><a href="./products.htm?brand=Tissot">Tissot</a></li><li><a href="./products.htm?brand=Tudor">Tudor</a></li></ul><ul><li><a href="./products.htm?brand=Victorinox">Victorinox</a></li></ul></div>
+</li>
+<li>
+<a class="nav-item" href="./products.htm?gender=%D9%85%D8%B1%D8%AF%D8%A7%D9%86%D9%87">
+<i class="bi bi-watch"></i> ساعت مردانه</a>
+</li>
+<li>
+<a class="nav-item" href="./products.htm?gender=%D8%B2%D9%86%D8%A7%D9%86%D9%87"><i class="bi bi-watch"></i> ساعت زنانه</a>
+</li>
+<li>
+<a class="nav-item" href="./products.htm?gender=%D8%B3%D8%AA"><i class="bi bi-smartwatch"></i> ساعت های ست</a>
+</li>
+<li>
+<a class="nav-item" href="./products.htm"><i class="bi bi-stars"></i>سایر محصولات</a>
+</li>
+<li class="dropdown-parent">
+<a class="nav-item" href="#"><i class="bi bi-list-columns-reverse"></i> رنج قیمت</a>
+<ul class="dropdown">
+<li><a href="./products.htm?min=0&amp;max=5">زیر 5 میلیون</a></li>
+<li><a href="./products.htm?min=5&amp;max=10">بین 5 تا 10 میلیون</a></li>
+<li><a href="./products.htm?min=10&amp;max=15">بین 10 تا 15 میلیون</a></li>
+<li><a href="./products.htm?min=15&amp;max=20">بین 15 تا 20 میلیون</a></li>
+<li><a href="./products.htm?min=20&amp;max=70">20 میلیون و بیشتر</a></li>
+</ul>
+</li>
+<li></li>
+<li>
+<!-- <a href="#"><i class="bi bi-box-arrow-in-right"></i> ورود </a> -->
+</li>
+<li><a class="nav-item" href="./about.html"><i class="bi bi-info-circle"></i> درباره ما</a></li></ul>
+</nav>
+</header>
+<div class="cart-page-container"><div class="breadcrumb"><a href="./index.html">صفحه اصلی</a><i class="bi bi-chevron-left"></i><span>سبد خرید</span></div>
+<h1><i class="bi bi-cart2"></i> سبد خرید</h1>
+<p class="cart-status" id="cartStatus"><i class="bi bi-info-circle"></i> ۰ محصول در سبد خرید دارید</p>
+<div class="cart-container">
+<div class="cart-report">
+<h1 class="title">خلاصه خرید</h1>
+<div class="total-price">
+<h6>
+              مجموع قیمت
+              <p id="number-of-products">(۰ کالا)</p>
+</h6>
+<p class="total-price-value" id="total-price-value">
+              ۰ تومان
+            </p>
+</div>
+<div class="sending-price">
+<h6>هزینه ارسال</h6>
+<p class="sending-price-value" id="sending-price-value">رایگان</p>
+</div>
+<div class="final-price">
+<h2>قیمت نهایی</h2>
+<p class="final-price-value" id="final-price-value">
+              ۰ <span>تومان</span>
+</p>
+</div>
+<button class="continue-payment"><a href="" id="continue-payment">ادامه جهت تسویه حساب</a></button>
+<button class="continue-shopping"><a href="./products.htm" id="continue-shopping">ادامه خرید</a></button>
+<div class="waranties">
+<div class="waranty">
+<div class="waranty-title">
+<i class="bi bi-patch-check-fill"></i> ضمانت اصالت
+              </div>
+<div class="about-waranty-link"><a href="./about.html#authenticity"><i class="bi bi-caret-left-fill"></i></a></div>
+</div>
+<div class="waranty">
+<div class="waranty-title">
+<i class="bi bi-arrow-repeat"></i> ضمانت بازگشت
+              </div>
+<div class="about-waranty-link"><a href="./about.html#returns"><i class="bi bi-caret-left-fill"></i></a></div>
+</div>
+<div class="waranty">
+<div class="waranty-title">
+<i class="bi bi-truck"></i>ارسال سریع 
+               </div>
+<div class="about-waranty-link"><a href="./about.html#shipping"><i class="bi bi-caret-left-fill"></i></a></div>
+</div>
+</div>
+</div>
+<div class="cart-managment">
+<div class="products-information-title">
+<h4>محصول</h4>
+<h4>قیمت</h4>
+<h4>تعداد</h4>
+<h4>ویژگی ها</h4>
+<h4>قیمت کل</h4>
+<h4>حذف</h4>
+</div>
+<div id="romaCartEmptyState" class="cart-empty-state" hidden></div>
+</div>
+</div>
+</div>
+<footer>
+<div class="shop-address"></div>
+<div class="cols-container">
+<div class="col col-1">
+<h3>خرید و همکاری</h3>
+<ul>
+<li><a href="./about.html#shipping">روش های ارسال و رهگیری</a></li>
+<li><a href="./about.html#ordering">چگونه ثبت سفارش کنم</a></li>
+<li><a href="./about.html#delivery">سفارش کی به دستم میرسد</a></li>
+<li><a href="./about.html#authenticity">چگونه از اصالت کالا مطمین شوم</a></li>
+</ul>
+</div>
+<div class="col col-2">
+<h3>خدمات روما</h3>
+<ul>
+<li><a href="./about.html#shipping">ارسال یک روزه برای ایلام</a></li>
+<li><a href="./about.html#shipping">ارسال دو تا شش روزه در کل کشور</a></li>
+<li><a href="./about.html#returns">هفت روز ضمانت برگشت کالا</a></li>
+<li><a href="./about.html#installment">خرید اقساطی از روما</a></li>
+<li><a href="./about.html#after-sales">خدمات پس از فروش</a></li>
+</ul>
+</div>
+<div class="col col-3">
+<h3>پر فروشترین برند ها</h3>
+<ul>
+<li><a href="./products.htm?brand=Rolex">رولکس</a></li>
+<li><a href="./products.htm?brand=Omega">امگا</a></li>
+<li><a href="./products.htm?brand=Casio">کاسیو</a></li>
+<li><a href="./products.htm?brand=Citizen">سیتیزن</a></li>
+<li><a href="./products.htm?brand=Longines">لانژینس</a></li>
+</ul>
+</div>
+<div class="col col-4">
+<h3>رنج قیمت کالا ها</h3>
+<ul>
+<li><a href="./products.htm?max=30">کالاهای اقتصادی</a></li>
+<li><a href="./products.htm?min=30">کالاهای لوکس با قیمت بالا</a></li>
+<li><a href="./products.htm?gender=%D8%B3%D8%AA">ساعت ست</a></li>
+<li><a href="./products.htm?style=%D9%84%D9%88%DA%A9%D8%B3&amp;min=30">ساعت لوکس با قیمت بالا</a></li>
+<li><a href="./products.htm?style=%DA%A9%D9%84%D8%A7%D8%B3%DB%8C%DA%A9&amp;max=30">ساعت کلاسیک با قیمت اقتصادی</a></li>
+</ul>
+</div>
+<div class="col col-5">
+<div class="logo">roma watch</div>
+<div class="medias-icon">
+<i class="bi bi-instagram"></i>
+<i class="bi bi-telegram"></i>
+</div>
+</div>
+</div>
+<div class="developer-address">
+<p>طراحی شده و توسعه یافته توسط تیم طراحی ZINK DEVELOPERS</p>
+<div class="link-to-developer">
+<a href="#">
+<i class="bi bi-instagram"></i>
+<p>instagram</p>
+</a>
+</div>
+</div>
+</footer>
+</div><script src="./api.js"></script><script src="./products-data.js"></script>
+      <script src="./script.js"></script><script src="./cart.js"></script><script src="./ui.js"></script></body>
+</html>
